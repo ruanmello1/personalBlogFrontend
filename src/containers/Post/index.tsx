@@ -1,3 +1,4 @@
+import { Comments } from '../../Comments';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { Heading } from '../../components/Heading';
@@ -26,6 +27,7 @@ export const Post = ({ post }: PostProps) => {
           date={post.created_at}
         />
         <PostContainer content={post.content} />
+        <Comments slug={post.slug} title={post.title} />
       </MainContainer>
       <Footer />
     </>
