@@ -1,4 +1,4 @@
 [build]
-  command   = "CI= npm run export"
+  command   = "CI= npm run build && npm export"
   functions = "out_functions"
   publish   = "out_publish"
