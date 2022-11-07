@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Date } from '../Date';
 import { Container } from './styled';
 
@@ -14,7 +15,8 @@ export const PostDetails = ({ author, category, date }: PostDetailsProps) => {
       <span>
         <Date date={date} />
       </span>
-      por {author} | {category}
+      por {author} | <span></span>
+      <Link href={`/categories/${category}`}>{category}</Link>
     </Container>
   );
 };
