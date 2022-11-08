@@ -17,3 +17,9 @@ export const Category = styled.div`
     text-transform: capitalize;
   }
 `;
+
+export const AllPostsLink = styled.span`
+  display: block;
+  text-align: center;
+  margin: ${({ theme }) => theme.spacings.large} 0;
+`;
