@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Head from 'next/head';
 import Link from 'next/link';
 import { Footer } from '../../components/Footer';
@@ -47,7 +48,7 @@ export default function HomePage({
             />
           ))}
         </Container>
-        <Pagination {...pagination} />
+        <Pagination {...pagination!} />
         {!pagination?.nextPage && (
           <Link href="/post/page/1" passHref>
             <AllPostsLink>Ver todos os posts</AllPostsLink>
